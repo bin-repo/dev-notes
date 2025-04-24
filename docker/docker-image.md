@@ -40,7 +40,7 @@ docker pull myregister.com/openjdk:8
 ## 推送镜像（`docker push`）
 
 ```sh
-# 须先注册用户
+# 须先注册用户并登录 docker login
 docker push myregister.com/openjdk:8
 ```
 

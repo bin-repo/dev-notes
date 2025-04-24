@@ -29,6 +29,12 @@ docker run -d -p 8080:80 --name=mycontainer docker/welcome-to-docker
 docker inspect mycontainer
 ```
 
+## 容器状态（`docker stats`）资源占用情况
+
+```sh
+docker stats mycontainer
+```
+
 ## 容器日志（`docker logs`）
 
 ```sh
@@ -77,4 +83,10 @@ docker stop mycontainer
 
 ```sh
 docker rm mycontainer
+```
+
+## 将容器提交为本地镜像（`docker commit`）
+
+```sh
+docker commit -m "update container" myconatiner myimage:mytag
 ```
